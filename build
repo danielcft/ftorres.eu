@@ -1,6 +1,6 @@
 #!/bin/bash
 # depends on pandoc & md2gemini
-for filename in content/**/*.md
+for filename in content/**.md
 do
 	# build html
 	pandoc "${filename}" -o "${filename/\.md/\.html}" \

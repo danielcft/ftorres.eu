@@ -1,14 +1,13 @@
 ```
-         /|\  
-       /__| )            
-     /____| )) 					 
-   /______| )))				ftorres.eu
- /________|  )))					
-         _|____))			email:d @ ftorres.eu                 
- \======| o o /				github.com/danielcft
+         /|\
+       /__| )
+     /____| ))
+   /______| )))   ftorres.eu
+ /________|  )))
+         _|____)) email:d @ ftorres.eu
+ \======| o o /   github.com/danielcft
 ~~~~~~~~~~~~~~~~~~~
 ```
-Welcome onboard fellow traveller. Come and have a look at my ship.
 
 # ~/log
 [Read gemini pages on the Kindle](pages/read_gemlogs_on_kindle.md)
