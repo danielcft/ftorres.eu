@@ -1,0 +1,26 @@
+#!/bin/sh
+# gemdir-to-epub - generate epub from a gemini directory
+# dependencies: gemget, pandoc
+
+if [ $# -ne 2 ] || [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+	printf "Usage: gemdir-to-epub gemini://[url]/ [title]\n"
+  exit 0
+fi
+
+DIR=$(printf "%s" "$1" | sed 's,gemini:\/\/,,')
+TITLE="$2"
+
+# download the initial .gmi file , extract links,  and for each link download respective .gmi file
+gemget "$DIR" -o -\
+	| awk '/=> /{print $2}' | awk '/.gmi/' \
+	| while IFS= read -r GMI_LINK; \
+do COUNTER=$((COUNTER+1)); \
+	STRIPPED_LINK=$(printf "%s" "$GMI_LINK" | sed "s,gemini:\/\/,,; s,.gmi,,; s,$DIR,,");\
+	gemget "gemini://$DIR/$STRIPPED_LINK.gmi" -o "$COUNTER.gmi"
+done;
+
+# generate epub based on the .gmi files
+pandoc --metadata title="$TITLE" -o "$TITLE".epub -f markdown -t epub $(find -- *.gmi | sort --numeric-sort)
+
+# remove .gmi files
+rm -f -- *.gmi
