@@ -10,5 +10,5 @@ pandoc "${filename}" -o "${filename/\.md/\.html}" \
  --reference-links --reference-location=block \
  --lua-filter pandoc/links-to-html.lua
 
-md2gemini --md-links "${filename}" > "${filename/\.md/\.gmi}"
+md2gemini --md-links --no-checklist "${filename}" > "${filename/\.md/\.gmi}"
 done <<< "$(find 'content/' -name '*.md')"
