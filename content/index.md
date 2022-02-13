@@ -13,6 +13,9 @@
 - [How to read gemini pages on the Kindle](pages/read_gemlogs_on_kindle.md)
 - [Why I stopped using my smartphone](pages/phone.md)
 
+# ~/food_recipes
+- [Mushroom risotto](mushroom_risotto.md)
+- [Vegetable curry](vegetable_curry.md)
 
 # ~/books
 - The pragmatic programmer - Andy Hunt & David Thomas
@@ -24,10 +27,6 @@
 
 # ~/interesting_articles
 - [UNIX](https://danluu.com/mcilroy-unix)
-
-# ~/food_recipes
-- [Mushroom risotto](mushroom_risotto.md)
-- [Vegetable curry](vegetable_curry.md)
 
 # ~/tools
 - Slackware
