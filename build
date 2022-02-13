@@ -1,15 +1,14 @@
 #!/bin/bash
 # depends on pandoc & md2gemini
-for filename in content/**.md
+
+while IFS=$'\n' read -r filename;
 do
-	# build html
-	pandoc "${filename}" -o "${filename/\.md/\.html}" \
-	--standalone \
-	--metadata-file=pandoc/metadata.yaml \
-	--template=pandoc/template.html \
-	--reference-links --reference-location=block \
-	--lua-filter pandoc/links-to-html.lua
-	
-	# build gemtext 
-	md2gemini --md-links "${filename}" > "${filename/\.md/\.gmi}"
-done
+pandoc "${filename}" -o "${filename/\.md/\.html}" \
+ --standalone \
+ --metadata-file=pandoc/metadata.yaml \
+ --template=pandoc/template.html \
+ --reference-links --reference-location=block \
+ --lua-filter pandoc/links-to-html.lua
+
+md2gemini --md-links "${filename}" > "${filename/\.md/\.gmi}"
+done <<< "$(find 'content/' -name '*.md')"
