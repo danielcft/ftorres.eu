@@ -16,8 +16,6 @@
 
 [Using a dumbphone](pages/phone.md)
 
-[Less sucky email](pages/email.md )
-
 [Recommended software](pages/tools.md)
 
 # ~/resources
