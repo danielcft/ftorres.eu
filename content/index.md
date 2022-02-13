@@ -22,7 +22,8 @@
 - Designing Data Intensive applications - Martin Kleppmann
 - Clean Code - "Uncle Bob" 
 - The Linux command line - William Shotts
-- [POSIX Shell Standard](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18)
+- [POSIX Shell Tutorial](https://www.grymoire.com/Unix/Sh.html) 
+- [Wooledge Full Bash Guide](https://mywiki.wooledge.org/FullBashGuide)
 - [sed](https://www.panix.com/~elflord/unix/sed.html)
 
 # ~/interesting_articles
@@ -33,6 +34,7 @@
 - vim
 - tmux
 - lynx
+- fish
 - git
 - rsync
 
