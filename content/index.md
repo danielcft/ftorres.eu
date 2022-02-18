@@ -29,15 +29,6 @@
 # ~/interesting_articles
 - [UNIX](https://danluu.com/mcilroy-unix)
 
-# ~/tools
-- Slackware
-- vim
-- tmux
-- lynx
-- fish
-- git
-- rsync
-
 ## ~/gemini_capsules
 - [drew devault](gemini://drewdevault.com)
 - [solderpunk](gemini://gemini.circumlunar.space/~solderpunk)
