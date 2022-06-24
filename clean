@@ -1,4 +1,4 @@
 #!/bin/sh
 
-find content/ -name "*.gmi"  -exec rm {} \;
 find content/ -name "*.html" -exec rm {} \;
+find content/ -name "*.css" -exec rm {} \;

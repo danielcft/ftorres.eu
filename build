@@ -1,6 +1,8 @@
 #!/bin/sh
 # depends on pandoc & md2gemini
 
+cp 'pandoc/style.css' 'content/'
+
 find 'content/' -name '*.md' |
   while IFS="$(printf '\n')" read -r filename;
   do
@@ -11,5 +13,4 @@ find 'content/' -name '*.md' |
      --template=pandoc/template.html \
      --reference-links --reference-location=block \
      --lua-filter pandoc/links-to-html.lua
-#  md2gemini --md-links --no-checklist "$filename" > "$filename_no_ext.gmi"
 done
