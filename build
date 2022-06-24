@@ -1,14 +1,15 @@
-#!/bin/bash
+#!/bin/sh
 # depends on pandoc & md2gemini
 
-while IFS=$'\n' read -r filename;
-do
-pandoc "${filename}" -o "${filename/\.md/\.html}" \
- --standalone \
- --metadata-file=pandoc/metadata.yaml \
- --template=pandoc/template.html \
- --reference-links --reference-location=block \
- --lua-filter pandoc/links-to-html.lua
-
-md2gemini --md-links --no-checklist "${filename}" > "${filename/\.md/\.gmi}"
-done <<< "$(find 'content/' -name '*.md')"
+find 'content/' -name '*.md' |
+  while IFS="$(printf '\n')" read -r filename;
+  do
+  filename_no_ext="$(echo "$filename" | sed 's/\.md//')"
+  pandoc "$filename" -o "$filename_no_ext.html" \
+     --standalone \
+     --metadata-file=pandoc/metadata.yaml \
+     --template=pandoc/template.html \
+     --reference-links --reference-location=block \
+     --lua-filter pandoc/links-to-html.lua
+#  md2gemini --md-links --no-checklist "$filename" > "$filename_no_ext.gmi"
+done

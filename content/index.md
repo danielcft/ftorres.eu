@@ -9,24 +9,23 @@
 ~~~~~~~~~~~~~~~~~~~
 ```
 
-# ~/articles
-- [How to read gemini pages on the Kindle](pages/read_gemlogs_on_kindle.md)
-- [Why I stopped using my smartphone](pages/phone.md)
+# articles
+- [Reading gemini pages on the Kindle](pages/read_gemlogs_on_kindle.md)
 
-# ~/food_recipes
+# food recipes
 - [Mushroom risotto](mushroom_risotto.md)
 - [Vegetable curry](vegetable_curry.md)
 
-# ~/books
-- The pragmatic programmer - Andy Hunt & David Thomas
+# book recomendations
 - Designing Data Intensive applications - Martin Kleppmann
-- Clean Code - "Uncle Bob" 
+- The pragmatic programmer - Andy Hunt & David Thomas
 - The Linux command line - William Shotts
+- Java Concurrency in Practice - Brian Goetz
 - [POSIX Shell Tutorial](https://www.grymoire.com/Unix/Sh.html) 
 - [Wooledge Full Bash Guide](https://mywiki.wooledge.org/FullBashGuide)
 - [sed](https://www.panix.com/~elflord/unix/sed.html)
 
-# ~/interesting_articles
+# article recomendations
 - [UNIX](https://danluu.com/mcilroy-unix)
 
 ## ~/gemini_capsules
