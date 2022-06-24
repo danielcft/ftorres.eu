@@ -27,9 +27,3 @@
 
 # article recomendations
 - [UNIX](https://danluu.com/mcilroy-unix)
-
-## ~/gemini_capsules
-- [drew devault](gemini://drewdevault.com)
-- [solderpunk](gemini://gemini.circumlunar.space/~solderpunk)
-- [hundredrabbits](gemini://gemini.circumlunar.space/users/hundredrabbits)
-- [gluonspace](gemini://gluonspace.com/)
