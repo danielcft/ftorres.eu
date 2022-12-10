@@ -9,12 +9,10 @@
 ~~~~~~~~~~~~~~~~~~~
 ```
 
-# articles
-- [Reading gemini pages on the Kindle](pages/read_gemlogs_on_kindle.md)
-
 # food recipes
 - [Mushroom risotto](mushroom_risotto.md)
 - [Vegetable curry](vegetable_curry.md)
+- [Ratatouille](ratatouille.md)
 
 # book recomendations
 - Designing Data Intensive applications - Martin Kleppmann

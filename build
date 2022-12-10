@@ -1,5 +1,5 @@
 #!/bin/sh
-# depends on pandoc & md2gemini
+# depends on pandoc
 
 cp 'pandoc/style.css' 'content/'
 
