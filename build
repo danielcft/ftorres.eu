@@ -1,5 +1,7 @@
 #!/bin/sh
-# depends on pandoc
+# depends on pandoc and markdownlint
+
+if ! markdownlint content/; then exit 1; fi
 
 cp 'pandoc/style.css' 'content/'
 
