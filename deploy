@@ -1,12 +1,4 @@
 #!/bin/sh
-# depends on linkchecker, available in most package systems
 
-rsync -a content/ daniel@ftorres.eu:~/gemini
-rsync -a content/ ftorres@rawtext.club:~/public_html/
-rsync -a content/ daniel@ftorres.eu:/var/www/html/
-
-# check for broken links and print out results 
-# gemini:// are currently printed as errors
-# I inspected linkchecker's code and it looks like it uses a csv file from IANA
-# which does not contain gemini (yet)
-#linkchecker --check-extern "http://ftorres.eu"
+rsync -a content/ 'ftorres@rawtext.club:~/public_html/'
+rsync -a content/ 'dto@ftorres.eu:/var/www/html/'
